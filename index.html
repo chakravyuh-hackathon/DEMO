@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Task Manager</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <div class="container glass">
+        <header>
+            <h1>Task Manager</h1>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-btn" class="btn-primary">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <ul id="task-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+
+        <footer class="about-section">
+            <h3>About</h3>
+            <p>A modern task manager built with Vanilla JS and Glassmorphism UI.</p>
+            <a href="#" id="github-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> My GitHub
+            </a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
